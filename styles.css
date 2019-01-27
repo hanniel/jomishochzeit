@@ -159,4 +159,7 @@ a:hover{
     width: 100%;
     margin-left:0%;
   }
+  #timer > div:nth-child(4) {
+    display: none;
+  }
 }
