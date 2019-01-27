@@ -14,24 +14,124 @@
 
 </head>
 
-<style>
-*{
-  box-sizing: border-box;
-}
-body{
-  background-color: #fff;
-}
 
-.container{
-  width: 100%;
-}
-
-@media only screen and (max-width: 786px) {
-}
-</style>
 
 <body>
-  <h1>Wir bitten noch um wenig Geduld. Weitere Infos folgen bald.</h1>
 
 
+  <div class="bottom flex">
+
+  </div>
+
+  <!-- <div class="menu flex">
+      <div class="menu-child">
+        <a href="#hochzeit">die hochzeit</a>
+      </div>
+      <div class="menu-child">
+        <a href="#hotel">hotelempfehlungen</a>
+      </div>
+      <div class="menu-child">
+        <a href="#geschenke">geschenke</a>
+      </div>
+      <div class="menu-child">
+        <a href="#kontakt">kontakt</a>
+      </div>
+
+  </div> -->
+<div class="intro flex">
+  <img src="logo.svg" alt="">
+</div>
+  <div class="top">
+
+    <h3 class="wedding-timer">It's Wedding time in…</h3>
+
+    <div id="timer"></div>
+    <div class="hochzeit">
+      <h2>Gott sei Dank, wir heiraten!</h2>
+      <p>
+Sonntag, 28. April 2019
+<br><br><b>Beginn der Trauung</b> <br>10 Uhr, Wahre Jesus Gemeinde Rheinland
+<br><br><b>Beginn der Hochzeitsfeier</b><br> 12 Uhr Sektempfang, Haus Erholung<br>
+<br>Um uns das Planen zu erleichtern, bitten wir euch uns bis zum 28.02.19 Bescheid zu sagen, ob ihr teilnehmen könnt. Wir freuen uns auf euch!
+<br>
+<br>Falls Ihr Ideen und Anregungen für das Hochzeitsprogramm habt oder selber etwas beitragen wollt, könnt ihr gerne Cholpon via Email (<a href="mailto:zhakshylykova@gmail.com">zhakshylykova@gmail.com</a>) kontaktieren.
+
+<br>
+<br><i>Festliche Kleidung ist erwünscht.</i>
+  </p>
+      <div class="anfahrt">
+        <h2>Anfahrt</h2>
+        <a class="no-border" href="https://www.google.com/maps/d/viewer?mid=12ws1S_VZxgDjh7VJwOVGfOrK2btZhbLa"><img class="map" src="map.svg" alt=""></a>
+<br><br><br>
+
+    <p><b>Wahre Jesus Gemeinde, Rheinland</b>
+    <br>Eickenerstr. 106
+    <br>41061 Mönchengladbach
+    <br>
+    <br>Kostenlose Parkmöglichkeiten gibt es im näheren Umfeld der Gemeinde (z.B. auf der Thüringerstraße oder dem Eickener Markt).
+    <br>
+    <br>Von der Gemeinde aus sind es zum Haus Erholung ca. zehn Minuten mit dem Auto. Alternativ könnt ihr auch zu Fuß gehen. Dafür braucht ihr ca. 20 Minuten.
+  </p>
+<br>
+<br>
+
+<p><b>Haus Erholung</b>
+<br>Johann-Peter-Boelling-Platz 1
+<br>41061 Mönchengladbach
+<br>
+<br>Das Haus Erholung ist gut über den Hauptbahnhof von Mönchengladbach zu erreichen. Von dort sind es ca. zwölf Minuten zu Fuß. Gerne könnt ihr auch mit dem Auto kommen. Parkplätze wurden für euch gemietet.
+</p>
+      </div>
+      <div class="outfit">
+
+      </div>
+    </div>
+
+    <div class="hotel">
+    </div>
+    <div class="geschenke">
+      <h2>Geschenke</h2>
+      <p>
+    Liebe Gäste,
+      <br>natürlich ist euer Erscheinen schon das größte Geschenk für uns.
+      <br>Falls Ihr uns trotz dessen etwas schenken wollt, bitten wir euch um eine kleine finanzielle Unterstützung, da wir viele Dinge in unserem Hausrat schon haben.
+      <br>Sollte das nicht eurem Geschmack entsprechen, haben wir alternativ eine Wunschliste auf <a target="_blank" href="https://www.amazon.de/wedding/naomi-hu-josef-yue-moumlnchengladbach-april-2019/registry/Q9CY81LHVSCU
+">amazon.de</a> zusammengestellt.
+
+    </div>
+
+    <div class="kontakt">
+
+    </div>
+
+
+  </div>
+
+<script>
+
+function updateTimer() {
+  future  = Date.parse("March 28, 2019 12:00:00");
+  now     = new Date();
+  diff    = future - now;
+
+  days  = Math.floor( diff / (1000*60*60*24) );
+  hours = Math.floor( diff / (1000*60*60) );
+  mins  = Math.floor( diff / (1000*60) );
+  secs  = Math.floor( diff / 1000 );
+
+  d = days;
+  h = hours - days  * 24;
+  m = mins  - hours * 60;
+  s = secs  - mins  * 60;
+
+  document.getElementById("timer")
+    .innerHTML =
+      '<div>' + d + '<span>Tage</span></div>' +
+      '<div>' + h + '<span>Stunden</span></div>' +
+      '<div>' + m + '<span>Minuten</span></div>' +
+      '<div>' + s + '<span>Sekunden</span></div>' ;
+}
+setInterval('updateTimer()', 1000 );
+
+</script>
 </body>
