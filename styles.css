@@ -10,20 +10,30 @@ body{
   background-color: #fff;
   margin: 0;
   text-align: center;
-  font-family: "Helvetica Neue", "Open Sans", helvetica, arial, sans-serif;
+  font-family: "poppins", "Helvetica Neue", "Open Sans", helvetica, arial, sans-serif;
 }
 h2{
-  font-family: georgia, serif;
-  font-weight: 100;
-  font-size: 24px;
+  font-family: "playfair display", georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 32px;
   line-height: 1.3;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+  letter-spacing: 0.5px;
   color: #666;
   margin: 10px  auto 30px auto;
   max-width: 600px;
-
 }
+.cn{
+  font-style:normal;
+}
+ a.cn{
+border: none;
+}
+a.cn:hover{
+border: none;
+background-color: #eee;
+}
+
 h3{
 
   font-weight: 400;
@@ -36,9 +46,9 @@ h3{
 
 }
 p{
-  max-width: 600px;
+  max-width: 400px;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 16px;
   color: #777;
   margin: 0 auto;
 }
@@ -70,20 +80,39 @@ a:hover{
   z-index: -2;
 
 }
+.language{
+  width: 40px;
+  height: 40px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: 16px;
+  text-align: right;
+  background-color: #fff;
+  border-radius: 50%;
+  right: 100%;
+  border: none;
+}
+
+.language:hover{
+  background-color: #AD554D;
+  color: #fff;
+}
+
 .intro{
-  height: calc(100vh - 170px);
-  width: 50%;
-  margin-left:50%;
+  height: calc(100vh - 236px);
 }
 .intro > img{
   width: 60%;
 }
 .top{
   background-color: #fff;
-  width: 50%;
-  margin-left:50%;
-  padding: 40px 10px;
+  padding: 40px 16px;
 }
+.intro ,.top{
+  width: 35%;
+  margin-left:65%;
+}
+
 .flex{
     display: flex;
     align-items: center;
@@ -126,11 +155,12 @@ a:hover{
 
 }
 #timer {
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: 100;
   color: #555;
   text-align: center;
   margin-bottom: 100px;
+  line-height: 1.3;
 }
 
   #timer > div {
@@ -145,6 +175,12 @@ a:hover{
       font-weight: 400;
     }
 
+
+  @media only screen and (max-width: 1200px) {
+      .top, .intro{
+        width: 50%;
+        margin-left:50%;
+      }
 
 @media only screen and (max-width: 786px) {
   .top, .intro{

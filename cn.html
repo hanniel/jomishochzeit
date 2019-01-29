@@ -23,7 +23,7 @@
 
   </div>
 
-    <a class="language flex" href="#">中</a>
+    <a class="language flex" href="index.html">DE</a>
 <div class="intro flex">
   <img src="logo.svg" alt="">
 </div>
@@ -33,19 +33,19 @@
 
     <div id="timer"></div>
     <div class="hochzeit">
-      <h2>Gott sei Dank,<br>wir heiraten!</h2>
+      <h2 class="cn">感谢神,<br>我们要结婚了!</h2>
       <p>
-Sonntag, 28. April 2019
-<br><br><b>Beginn der Trauung</b> <br>10 Uhr, Wahre Jesus Gemeinde Rheinland
-<br><br><b>Beginn der Hochzeitsfeier</b><br> 12 Uhr Sektempfang, Haus Erholung<br>
-<br>Bitte sagt uns bis zum 28.02.19 Bescheid ob ihr teilnehmen könnt. Wir freuen uns auf euch!
+2019年4月28日 星期天
+<br><br><b>结婚典礼</b> <br>10点, 莱茵祈祷所
+<br><br><b>婚宴</b><br> 12点迎宾, Haus Erholung<br>
+<br>请在2019年2月28日之前告知我们，您是否会参加结婚典礼。期待您的到来！
 <br>
-<br>Eure Ideen und Anregungen für das Hochzeitsprogramm könnt ihr Cholpon gerne via Email  (<a href="mailto:zhakshylykova@gmail.com">zhakshylykova@gmail.com</a>) schicken.
+<br>如果您有为我们的婚礼准备节目或者想到有趣的主意？ 请通过Email和Cholpon联系 <a class="cn" href="mailto:zhakshylykova@gmail.com">zhakshylykova@gmail.com</a>
 
 <br>
   </p>
       <div class="anfahrt">
-        <h2>Anfahrt &<br> Hotemempfehlungen</h2>
+        <h2 class="cn">路线 & 旅馆推荐</h2>
         <a class="no-border" href="https://www.google.com/maps/d/viewer?mid=12ws1S_VZxgDjh7VJwOVGfOrK2btZhbLa"><img class="map" src="map.svg" alt=""></a>
 <br><br><br>
 
@@ -53,8 +53,9 @@ Sonntag, 28. April 2019
     <br>Eickenerstr. 106
     <br>41061 Mönchengladbach
     <br>
-    <br><i>Kostenlose Parkmöglichkeiten gibt es z.B. auf der Thüringerstraße oder auf dem Eickener Markt.
-    <br>Von der Gemeinde aus sind es zum Haus Erholung ca. zehn Minuten mit dem Auto, zu Fuß  ca. 20 Minuten. </i>
+    <br>在教会附近可以找到免费的停车位。
+    <br>从教会到 Haus Erholung 大概10分钟的车程，或者您也可以选择步行前往，大约需要20分钟。
+
   </p>
 <br>
 <br>
@@ -63,8 +64,7 @@ Sonntag, 28. April 2019
 <br>Johann-Peter-Boelling-Platz 1
 <br>41061 Mönchengladbach
 <br>
-<br><i>Das Haus Erholung ist vom Hauptbahnhof Mönchengladbach zu Fuß in nur ca. zwölf Minuten zu erreichen. Gerne könnt ihr auch mit dem Auto kommen. Parkplätze wurden für euch gemietet.
-</i>
+<br>从门兴格拉德巴赫火车站您可以很方便的前往Haus Erholung。步行只需要12分钟，或者您也可以选择驾车前往，停车位已经为您预定好。
 </p>
       </div>
       <div class="outfit">
@@ -75,13 +75,12 @@ Sonntag, 28. April 2019
     <div class="hotel">
     </div>
     <div class="geschenke">
-      <h2>Geschenke</h2>
+      <h2 class="cn">礼物</h2>
       <p>
-    Liebe Gäste,
-      <br>natürlich ist euer Erscheinen schon das größte Geschenk für uns.
-      <br>Falls Ihr uns trotz dessen etwas schenken wollt, bitten wir euch um eine kleine finanzielle Unterstützung.
-      <br>Sollte das nicht eurem Geschmack entsprechen, haben wir alternativ eine Wunschliste auf <a target="_blank" href="https://www.amazon.de/wedding/naomi-hu-josef-yue-moumlnchengladbach-april-2019/registry/Q9CY81LHVSCU
-">amazon.de</a> zusammengestellt.
+        亲爱的客人们，
+    <br>您的莅临对于我们是最大的礼物！
+    <br>当然如果您还想送我们什么的话，我们会希望一些经济上的帮助。或者您也可以在 <a class="cn" target="_blank" href="https://www.amazon.de/wedding/naomi-hu-josef-yue-moumlnchengladbach-april-2019/registry/Q9CY81LHVSCU
+">amazon.de</a>  上看一下，这里有我们的愿望清单。
 
     </div>
 
@@ -111,10 +110,10 @@ function updateTimer() {
 
   document.getElementById("timer")
     .innerHTML =
-      '<div>' + d + '<span>Tagen</span></div>' +
-      '<div>' + h + '<span>Stunden</span></div>' +
-      '<div>' + m + '<span>Minuten</span></div>' +
-      '<div>' + s + '<span>Sekunden</span></div>' ;
+      '<div>' + d + '<span>天</span></div>' +
+      '<div>' + h + '<span>小时</span></div>' +
+      '<div>' + m + '<span>分钟</span></div>' +
+      '<div>' + s + '<span>秒</span></div>' ;
 }
 setInterval('updateTimer()', 1000 );
 
