@@ -23,6 +23,10 @@ h2{
   margin: 10px  auto 30px auto;
   max-width: 600px;
 }
+h2.cn{
+  font-family: "playfair display", georgia, serif;
+}
+
 .cn{
   font-style:normal;
 }
